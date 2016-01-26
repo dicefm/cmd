@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/revel/revel"
+	"github.com/dicefm/revel"
 	"io/ioutil"
 	"os"
 	"path/filepath"

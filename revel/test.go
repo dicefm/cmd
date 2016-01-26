@@ -3,9 +3,9 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/revel/revel"
-	"github.com/revel/revel/harness"
-	"github.com/revel/revel/modules/testrunner/app/controllers"
+	"github.com/dicefm/revel"
+	"github.com/dicefm/revel/harness"
+	"github.com/dicefm/revel/modules/testrunner/app/controllers"
 	"io"
 	"io/ioutil"
 	"net/http"
@@ -62,7 +62,7 @@ func testApp(args []string) {
 	// Ensure that the testrunner is loaded in this mode.
 	testRunnerFound := false
 	for _, module := range revel.Modules {
-		if module.ImportPath == "github.com/revel/revel/modules/testrunner" {
+		if module.ImportPath == "github.com/dicefm/revel/modules/testrunner" {
 			testRunnerFound = true
 			break
 		}
